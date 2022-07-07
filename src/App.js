@@ -3,8 +3,9 @@ import ResponsiveAppBar from "./components/Navbar";
 //import Opportunities from "./components/Opportunities";
 import Footer from "./components/Footer";
 import Jobs from "./components/Jobs";
-import {Routes, Route} from "react-router-dom"
-import Opportunities from "./components/Opportunities"
+import Tourism from "./components/Tour";
+import { Routes, Route } from "react-router-dom";
+import Opportunities from "./components/Opportunities";
 
 function App() {
   return (
@@ -12,10 +13,11 @@ function App() {
       {/* <header> */}
       <ResponsiveAppBar />
       <Routes>
-           <Route path="/" element={<Opportunities/>}/>
-           <Route path="Jobs" element={<Jobs/>} />
+        <Route path="/" element={<Opportunities />} />
+        <Route path="Jobs" element={<Jobs />} />
+        <Route path="Tourism" element={<Tourism />} />
       </Routes>
-        <Footer />
+      <Footer />
       {/* </Footer> */}
       {/* <Jobs /> */}
     </div>
