@@ -13,6 +13,7 @@ function App() {
       {/* <header> */}
       {/* Aditya */}
       <ResponsiveAppBar />
+      {/* Routed components */}
       <Routes>
         <Route path="/" element={<Opportunities />} />
         <Route path="Jobs" element={<Jobs />} />
