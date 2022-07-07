@@ -97,24 +97,14 @@ div img {
 .split {
   height: 50%;
   width: 50%;
-  position: fixed;
-  /* z-index: 1; */
+  position: absolute;
+  z-index: 1;
   top: 90%;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   padding-top: 20px;
 }
 
 /* Control the left side */
-.left {
-  left: 0;
-  background-color: #111;
-}
-
-/* Control the right side */
-.right {
-  right: 0;
-  background-color: red;
-}
 
 /* If you want the content centered horizontally and vertically */
 .centered {
@@ -123,4 +113,20 @@ div img {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+}
+
+.left {
+  width: 60vw;
+  /* background-color: #111; */
+}
+
+/* Control the right side */
+.right {
+  width: 40vw;
+  background-color: red;
 }

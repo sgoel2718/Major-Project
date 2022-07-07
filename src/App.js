@@ -10,7 +10,6 @@ import Opportunities from "./components/Opportunities";
 function App() {
   return (
     <div className="App">
-      {/* <header> */}
       <ResponsiveAppBar />
       <Routes>
         <Route path="/" element={<Opportunities />} />
@@ -18,8 +17,6 @@ function App() {
         <Route path="Tourism" element={<Tourism />} />
       </Routes>
       <Footer />
-      {/* </Footer> */}
-      {/* <Jobs /> */}
     </div>
   );
 }
