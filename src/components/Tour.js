@@ -3,7 +3,7 @@ import job from "./tourss.jpg";
 import agent from "./travel-agency.png";
 import guide from "./tour-guide.png";
 import restaurant from "./food.png";
-import transportation from "./transportation.png";
+import transportation from "./transportation.png"
 import styles from "./Project.css";
 import "./Project.css";
 
