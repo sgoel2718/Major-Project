@@ -16,6 +16,7 @@ import { Link } from "react-router-dom";
 
 const pages = ["Jobs", "Education", "HealthCare"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
+// const paths_url = ["/", "jobs", "education", "tourism"]
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -37,6 +38,7 @@ const ResponsiveAppBar = () => {
   };
 
   return (
+    <div>
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -56,7 +58,7 @@ const ResponsiveAppBar = () => {
               textDecoration: "none",
             }}
           >
-            LOGO
+            Smart City
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -91,7 +93,6 @@ const ResponsiveAppBar = () => {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
-                    {page}
                     <Link to={`/${page}`}>{page}</Link>
                   </Typography>
                 </MenuItem>
@@ -115,17 +116,17 @@ const ResponsiveAppBar = () => {
               textDecoration: "none",
             }}
           >
-            SmartCity
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
+            {pages.map((page) => (               
+                 
+                <Button
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
                 <Link to={`/${page}`}>{page}</Link>
-                {page}
+                
               </Button>
             ))}
           </Box>
@@ -162,6 +163,8 @@ const ResponsiveAppBar = () => {
         </Toolbar>
       </Container>
     </AppBar>
+
+    </div>
   );
 };
 export default ResponsiveAppBar;
