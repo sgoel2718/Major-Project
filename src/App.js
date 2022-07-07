@@ -12,6 +12,7 @@ function App() {
     <div className="App">
       {/* <header> */}
       <ResponsiveAppBar />
+      {/* Routed components */}
       <Routes>
         <Route path="/" element={<Opportunities />} />
         <Route path="Jobs" element={<Jobs />} />
