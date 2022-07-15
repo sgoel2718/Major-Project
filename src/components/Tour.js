@@ -5,23 +5,23 @@ import job from "./tourss.jpg";
 import styles from "./Project.css";
 
 export default function Footer() {
-  return (
-    <>
-      <div>
-        <img src={job} alt="tour" />
-        <h2>Discover the colourful world</h2>
-        <h1>Buy Yourself The Freedom</h1>
-      </div>
-      <div className="container">
-        <div className="left">hello</div>
-        <div className="right">hello1</div>
-      </div>
-    </>
-  );
+	return (
+		<>
+			<div>
+				<img src={job} alt="tour" />
+				<h2>Discover the colourful world</h2>
+				<h1>Buy Yourself The Freedom</h1>
+			</div>
+			<div className="container">
+				<div className="left">hello</div>
+				<div className="right">hello1</div>
+			</div>
+		</>
+	);
 }
 
 {
-  /* <Box
+	/* <Box
   sx={{
     display: "flex",
     flexWrap: "wrap",
