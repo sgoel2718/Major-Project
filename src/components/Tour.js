@@ -7,7 +7,7 @@ import transportation from "./transportation.png"
 import styles from "./Project.css";
 import "./Project.css";
 
-export default function Footer() {
+export default function Tourism() {
   return (
     <>
       <div>
