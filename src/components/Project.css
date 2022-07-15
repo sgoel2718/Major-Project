@@ -63,7 +63,7 @@ footers {
 
 h2 {
   position: absolute;
-  color: black;
+  color: whitesmoke;
   top: 40%;
   width: 100%;
   text-align: center;
@@ -71,7 +71,7 @@ h2 {
 
 h1 {
   position: absolute;
-  color: black;
+  color: whitesmoke;
   top: 45%;
   width: 100%;
   text-align: center;
@@ -118,6 +118,7 @@ div img {
 .container {
   min-height: 70vh;
   display: flex;
+  position: relative;
 }
 
 .left {
@@ -130,26 +131,31 @@ div img {
   background-color: red;
 }
 
+.size0 {
+  height: 4%;
+  width: 4%;
+}
+
 .size1 {
   height: 20%;
   width: 20%;
 }
 
 .size2 {
-  height: 20%;
-  width: 20%;
+  height: 15%;
+  width: 15%;
   position: absolute;
   right: 0;
 }
 .size3 {
-  height: 20%;
-  width: 20%;
+  height: 15%;
+  width: 15%;
   position: absolute;
   bottom: 0;
 }
 .size4 {
-  height: 20%;
-  width: 20%;
+  height: 15%;
+  width: 15%;
   position: absolute;
   left: 0;
 }

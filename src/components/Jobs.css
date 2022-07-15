@@ -1,0 +1,17 @@
+h2 {
+  position: absolute;
+  color: blue;
+  top: 40%;
+  width: 100%;
+  text-align: left;
+  padding-left: 15%;
+}
+
+h1 {
+  position: absolute;
+  color: blue;
+  top: 45%;
+  width: 100%;
+  text-align: left;
+  padding-left: 15%;
+}

@@ -20,11 +20,11 @@ export default function Footer() {
           <img className="size1" src={agent} alt="tour" />
           <h3>Travel Agent</h3>
           <img className="size2" src={transportation} alt="tour" />
-          <h3>Transportation</h3>
+          <h3 className="size2">Transportation</h3>
           <img className="size3" src={guide} alt="tour" />
-          <h3>Tourist Guide</h3>
+          <h3 className="size3">Tourist Guide</h3>
           <img className="size4" src={restaurant} alt="tour" />
-          <h3>Restaurants</h3>
+          <h3 className="size4">Restaurants</h3>
         </div>
         <div className="right">hell01</div>
       </div>
