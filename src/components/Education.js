@@ -7,6 +7,8 @@ import Cards from "./Cards";
 import "./Education.css";
 import about from "./images/about.jpg";
 import { Button } from "react-bootstrap";
+import Categories from "./Categories";
+import SchlCollg from "./SchlCollg";
 
 function CarouselFadeExample() {
 	return (
@@ -29,12 +31,14 @@ function CarouselFadeExample() {
 			</Carousel>
 			{/* <Cards /> */}
 
+			<Categories />
+
 			<Box sx={{ width: "100%" }}>
 				<Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-					<Grid item xs={6}>
+					<Grid item lg={6}>
 						<img className="imgg" src={about} alt="about" />
 					</Grid>
-					<Grid item xs={6}>
+					<Grid item lg={6}>
 						<div className="alignment">
 							<p className="size">About Us</p>
 							<h3>Welcome to eDUCATION wORLD</h3>
@@ -55,28 +59,7 @@ function CarouselFadeExample() {
 				</Grid>
 			</Box>
 
-			{/* <div className="container">
-				<div className="row g-5">
-					<div
-						className="col-lg-8 fadeInUp"
-						style={{
-							visibility: "visible",
-							minHeight: "400px",
-							animationDelay: "0.1s",
-							animationName: "fadeInUp",
-						}}
-					>
-						<div className="">
-							<img
-								className="imgg"
-								src={about}
-								alt=""
-								style={{ objectFit: "cover" }}
-							></img>
-						</div>
-					</div>
-				</div>
-			</div> */}
+			<SchlCollg />
 		</>
 	);
 }
