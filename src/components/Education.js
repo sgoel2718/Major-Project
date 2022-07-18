@@ -6,6 +6,7 @@ import education1 from "./images/carousel-2.jpg";
 import Cards from "./Cards";
 import "./Education.css";
 import about from "./images/about.jpg";
+import { Button } from "react-bootstrap";
 
 function CarouselFadeExample() {
 	return (
@@ -33,7 +34,24 @@ function CarouselFadeExample() {
 					<Grid item xs={6}>
 						<img className="imgg" src={about} alt="about" />
 					</Grid>
-					<Grid item xs={6}></Grid>
+					<Grid item xs={6}>
+						<div className="alignment">
+							<p className="size">About Us</p>
+							<h3>Welcome to eDUCATION wORLD</h3>
+							<p>Hey</p>
+							<Button
+								size="lg"
+								style={{
+									// backgroundColor: "#06BBCC",
+									border: "none",
+									fontWeight: "bold",
+									width: "20%",
+								}}
+							>
+								Read More
+							</Button>
+						</div>
+					</Grid>
 				</Grid>
 			</Box>
 
