@@ -13,8 +13,6 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { Link } from "react-router-dom";
-import smart from "./smart-city.png";
-import "./Project.css";
 
 const pages = ["Jobs", "Education", "Tourism"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -44,8 +42,7 @@ const ResponsiveAppBar = () => {
 			<AppBar position="static">
 				<Container maxWidth="xl">
 					<Toolbar disableGutters>
-						{/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
-						<img className="size0" src={smart} alt="smart"></img>
+						<AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
 						<Typography
 							variant="h6"
 							noWrap
