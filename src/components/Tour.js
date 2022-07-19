@@ -2,7 +2,11 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import job from "./tourss.jpg";
-import styles from "./Project.css";
+import agent from "./travel-agency.png";
+import guide from "./tour-guide.png";
+import restaurant from "./food.png";
+import transportation from "./transportation.png";
+import "./Project.css";
 
 export default function Footer() {
 	return (
@@ -13,27 +17,18 @@ export default function Footer() {
 				<h1>Buy Yourself The Freedom</h1>
 			</div>
 			<div className="container">
-				<div className="left">hello</div>
-				<div className="right">hello1</div>
+				<div className="left">
+					<img className="size1" src={agent} alt="tour" />
+					<h3>Travel Agent</h3>
+					<img className="size2" src={transportation} alt="tour" />
+					<h3 className="size2">Transportation</h3>
+					<img className="size3" src={guide} alt="tour" />
+					<h3 className="size3">Tourist Guide</h3>
+					<img className="size4" src={restaurant} alt="tour" />
+					<h3 className="size4">Restaurants</h3>
+				</div>
+				<div className="right">hell01</div>
 			</div>
 		</>
 	);
-}
-
-{
-	/* <Box
-  sx={{
-    display: "flex",
-    flexWrap: "wrap",
-    "& > :not(style)": {
-      m: 1,
-      width: 128,
-      height: 128,
-    },
-  }}
->
-  <Paper elevation={0} />
-  <Paper />
-  <Paper elevation={3} />
-</Box>; */
 }
