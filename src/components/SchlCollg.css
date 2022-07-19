@@ -1,0 +1,13 @@
+.service-item {
+	background-color: #06bbcc;
+	color: whitesmoke;
+	transition: 0.5s;
+}
+
+h4 {
+	text-align: center;
+	margin-bottom: 30%;
+	font-weight: bold;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: xx-large;
+}
