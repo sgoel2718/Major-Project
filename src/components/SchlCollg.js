@@ -8,8 +8,14 @@ import sc1 from "./images/sc1.jpg";
 import sc2 from "./images/sc2.jpg";
 import sc3 from "./images/sc3.jfif";
 import sc4 from "./images/sc4.jpg";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 export default function AutoGrid() {
+	const handleClick = (event) => {
+		console.log(event.target);
+
+		console.log("Image clicked");
+	};
 	return (
 		<>
 			<Box
@@ -33,11 +39,17 @@ export default function AutoGrid() {
 									animationName: "fadeInUp",
 								}}
 							>
-								<div className="">
-									<div className="">
-										<i className="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
-										<img src={sc1} style={{ width: "200%", height: "250px" }} />
-									</div>
+								<i className="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
+								<div>
+									<img
+										src={sc1}
+										onClick={handleClick}
+										style={{
+											width: "200%",
+											height: "250px",
+											cursor: "pointer",
+										}}
+									/>
 								</div>
 							</div>
 						</Grid>
@@ -54,7 +66,12 @@ export default function AutoGrid() {
 								<div className="service-item">
 									<div className="">
 										<i className="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
-										<img src={sc2} />
+										<img
+											src={sc2}
+											style={{
+												cursor: "pointer",
+											}}
+										/>
 									</div>
 								</div>
 							</div>
@@ -73,7 +90,10 @@ export default function AutoGrid() {
 							<div className="service-item">
 								<div className="">
 									<i className="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
-									<img src={sc3} style={{ height: "425px" }} />
+									<img
+										src={sc3}
+										style={{ height: "425px", cursor: "pointer" }}
+									/>
 								</div>
 							</div>
 						</div>
